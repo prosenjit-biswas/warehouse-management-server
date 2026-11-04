@@ -14,5 +14,8 @@ namespace WarehouseManagement.Domain.Entities
         public required string SKU  { get; set; }
         public required double UnitPrice { get; set; }
 
+        public ICollection<Stock> Stocks { get; set; }
+        public ICollection<StockMovement> StockMovements { get; set; }
+
     }
 }

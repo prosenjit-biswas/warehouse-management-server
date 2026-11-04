@@ -11,5 +11,8 @@ namespace WarehouseManagement.Domain.Entities
         public required string Name { get; set; }
         public string? Location {  get; set; }
         public ICollection<Product> Products {  get; set; }
+
+        public ICollection<StockMovement> StockMovements { get; set; }
+        public ICollection<Stock> Stocks   { get; set; }
     }
 }
